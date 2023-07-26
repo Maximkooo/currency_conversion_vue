@@ -45,8 +45,9 @@
         variant="danger"
         class="text-center mx-auto d-block"
         @click="() => (history = [])"
-        >Clear history</b-button
       >
+        Clear history
+      </b-button>
     </div>
   </div>
 </template>
@@ -79,7 +80,6 @@ export default {
   },
   created() {
     this.getData();
-
     this.interval = setInterval(() => {
       this.getData();
     }, 1000 * 60);
