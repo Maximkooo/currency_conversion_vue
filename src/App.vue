@@ -29,11 +29,18 @@
       </b-form-group>
 
       <div class="row mt-4">
-        <div class="col-6">
+        <div class="col-4">
           <b-button type="submit" variant="primary">Convert</b-button>
         </div>
-        <div class="col-6">
-          <h3>Value: {{ currentValue }}</h3>
+        <div class="col-4 text-center">
+          <h3 class="align-middle">
+            Value: <b>{{ currentValue }}</b>
+          </h3>
+        </div>
+        <div class="col-4 text-center">
+          <h3>
+            Total: <b>{{ totalActions }}</b>
+          </h3>
         </div>
       </div>
     </b-form>
@@ -86,6 +93,15 @@ export default {
   },
   destroyed() {
     clearInterval(this.interval);
+  },
+  computed: {
+    totalActions() {
+      return this.history.length
+        ? this.history
+            .reduce((acc, item) => acc + Number(item.actions), 0)
+            .toFixed(2)
+        : 0;
+    },
   },
   methods: {
     onSubmit() {
