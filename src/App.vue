@@ -33,12 +33,12 @@
           <b-button type="submit" variant="primary">Convert</b-button>
         </div>
         <div class="col-4 text-center">
-          <h4 class="align-middle">
+          <h4 class="pt-1">
             Value: <b>{{ currentValue }}</b>
           </h4>
         </div>
         <div class="col-4 text-center">
-          <h4>
+          <h4 class="pt-1">
             Total: <b>{{ totalActions }}</b>
           </h4>
         </div>
