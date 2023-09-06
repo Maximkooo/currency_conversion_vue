@@ -16,7 +16,7 @@ release v1.0
 
 <h2>Bug tracker</h2>
 
-If you find a bug, please report it <a href="https://github.com/Maximkooo/cocktails-vue/issues">here on Github!</a>
+If you find a bug, please report it <a href="https://github.com/Maximkooo/currency_conversion_vue/isstues">here on Github!</a>
 
 <h2>Developer</h2>
 
